@@ -113,7 +113,7 @@ class GraphSearchAgent(UIAgent):
         )
         self.reset()
 
-    def reset(self) -> None:
+    def reset(self, logger=None) -> None:
         """Reset agent state and initialize components"""
         # Initialize core components
         self.planner = Manager(
