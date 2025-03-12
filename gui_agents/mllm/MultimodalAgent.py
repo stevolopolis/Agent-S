@@ -111,7 +111,7 @@ class LMMAgent:
         """Add a new message to the list of messages"""
 
         # API-style inference from OpenAI and AzureOpenAI
-        if isinstance(self.engine, (LMMEngineOpenAI, LMMEngineAzureOpenAI)):
+        if isinstance(self.engine, (LMMEngineOpenAI, LMMEngineAzureOpenAI, LMMEnginevLLM)):
             # infer role from previous message
             if role != "user":
                 if self.messages[-1]["role"] == "system":
